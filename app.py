@@ -115,6 +115,7 @@ def treinar_modelo(
 dados = carregar_dados()
 
 st.title("🐧 Laboratório de Machine Learning")
+st.caption("Versão de exemplo — ajuste parâmetros para explorar o comportamento do modelo.")
 st.write(
     "Aprenda como um modelo identifica espécies de pinguins a partir de "
     "medidas corporais reais da base pública Palmer Penguins."
