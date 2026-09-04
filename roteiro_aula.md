@@ -12,3 +12,8 @@
 Notas:
 - Cada tópico deve ter exemplos práticos e exercício curto.
 - Estimativa: 60–90 minutos dependendo do aprofundamento.
+
+Tarefas futuras:
+- Incluir exercício de seleção de features
+- Demonstrar cross-validation e busca de hiperparâmetros
+
