@@ -71,3 +71,5 @@ aula_scikit_learn_pinguins/
 ├── requirements.txt
 └── roteiro_aula.md
 ```
+
+<!-- EOF -->
