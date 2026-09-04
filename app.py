@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 from palmerpenguins import load_penguins
+from typing import Optional, Tuple
 from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.impute import SimpleImputer
@@ -32,14 +33,27 @@ FEATURE_LABELS = {
 
 
 @st.cache_data
-def carregar_dados():
-    """Carrega a base pública Palmer Penguins."""
+def carregar_dados() -> pd.DataFrame:
+    """Carrega a base pública Palmer Penguins.
+
+    Returns:
+        pd.DataFrame: DataFrame com os dados dos pinguins.
+    """
     return load_penguins()
 
 
 @st.cache_resource
-def treinar_modelo(test_size, random_state, n_estimators, max_depth):
-    """Prepara os dados, treina o modelo e devolve resultados da avaliação."""
+def treinar_modelo(
+    test_size: float,
+    random_state: int,
+    n_estimators: int,
+    max_depth: Optional[int],
+) -> Tuple[Pipeline, pd.DataFrame, pd.DataFrame, pd.Series, pd.Series, pd.Series]:
+    """Prepara os dados, treina o modelo e devolve resultados da avaliação.
+
+    Returns a tuple with the trained pipeline, training and test sets,
+    labels and predictions.
+    """
     dados = carregar_dados()
     X = dados[FEATURES]
     y = dados["species"]
