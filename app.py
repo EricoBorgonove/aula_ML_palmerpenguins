@@ -96,6 +96,7 @@ st.write(
 
 with st.sidebar:
     st.header("Configuração do experimento")
+    st.markdown("Use os controles abaixo para ajustar o experimento e visualizar resultados.")
     test_size = st.slider(
         "Percentual reservado para teste",
         min_value=0.10,
