@@ -94,6 +94,7 @@ def treinar_modelo(
     modelo = RandomForestClassifier(
         n_estimators=n_estimators,
         max_depth=max_depth,
+        n_jobs=-1,
         random_state=random_state,
     )
 
