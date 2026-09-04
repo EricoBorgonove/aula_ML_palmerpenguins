@@ -1,7 +1,8 @@
 # Aula prática: Scikit-learn com Palmer Penguins
 
-Aplicação didática que treina um modelo de classificação e cria uma interface
-com Streamlit para identificar espécies de pinguins.
+Aplicação didática que treina um modelo de classificação com scikit-learn e
+exibe uma interface interativa com Streamlit para identificar espécies de
+pinguins a partir de medidas biométricas.
 
 ## O que o projeto ensina
 
