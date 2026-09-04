@@ -45,6 +45,11 @@ streamlit run app.py
 O terminal mostrará o endereço local da aplicação, normalmente
 `http://localhost:8501`.
 
+## Contribuindo
+
+Contribuições são bem-vindas: abra um issue ou envie um pull request com
+pequenas melhorias ou correções de documentação.
+
 ## Base de dados
 
 O projeto usa a base pública Palmer Penguins, distribuída no pacote Python
