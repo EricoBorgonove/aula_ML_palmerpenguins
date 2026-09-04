@@ -24,6 +24,16 @@ FEATURES = [
     "body_mass_g",
 ]
 
+
+def get_slider_defaults():
+    """Retorna valores padrão para os controles na UI (sliders)."""
+    return {
+        "bill_length": 45.0,
+        "bill_depth": 17.0,
+        "flipper_length": 200.0,
+        "body_mass": 4000.0,
+    }
+
 FEATURE_LABELS = {
     "bill_length_mm": "Comprimento do bico (mm)",
     "bill_depth_mm": "Profundidade do bico (mm)",
