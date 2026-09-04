@@ -42,6 +42,7 @@ FEATURE_LABELS = {
 }
 
 
+
 @st.cache_data
 def carregar_dados() -> pd.DataFrame:
     """Carrega a base pública Palmer Penguins.
