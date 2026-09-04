@@ -57,6 +57,11 @@ O projeto usa a base pública Palmer Penguins, distribuída no pacote Python
 Palmer, na Antártica. A base é carregada diretamente pelo código; não é
 necessário baixar um CSV separadamente.
 
+## Requisitos de versão
+
+O projeto foi testado com Python 3.10+. Recomenda-se usar um venv ou ambiente
+isolado ao instalar as dependências.
+
 ## Estrutura
 
 ```text
